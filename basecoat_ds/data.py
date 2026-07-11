@@ -34,10 +34,16 @@ class ComponentInfo:
 
 
 COMPONENTS_INFO = {
+    "alert": ComponentInfo(
+        name="Alert",
+        url_path_prefix="alert",
+        url_name="alert",
+        showcase_template_path_str=f"{SHOWCASE_TEMPLATES_COMMON_PATH_PREFIX}/alert.html"
+    ),
     "kbd": ComponentInfo(
         name="Kbd",
         url_path_prefix="kbd",
         url_name="kbd",
         showcase_template_path_str=f"{SHOWCASE_TEMPLATES_COMMON_PATH_PREFIX}/kbd.html"
-    )
+    ),
 }

@@ -5,7 +5,7 @@ This file tracks the progress of implementing all [Basecoat UI](https://basecoat
 ## Implementation Progress
 
 - [ ] Accordion
-- [ ] Alert
+- [X] [Alert](./basecoat_ds/templates/cotton/ds/alert/index.html)
 - [ ] Alert Dialog
 - [ ] Avatar
 - [ ] Badge

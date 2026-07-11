@@ -1,0 +1,61 @@
+{% extends "showcase/_base.html" %}
+
+{% block title %}Alert Showcase{% endblock %}
+
+{% block content %}
+<div class="mb-8">
+    <h2 class="text-3xl font-bold mb-2">Alert</h2>
+    <p class="text-base-content/70">All available Basecoat alert colors and modifiers.</p>
+</div>
+
+<section class="flex-col gap-8">
+  <div>
+    <h3>Alert</h3>
+    <div class="w-full max-w-md mt-4">
+      <c-ds.alert>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-icon lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+        <c-ds.alert.title>Account updated successfully</c-ds.alert.title>
+        <c-ds.alert.section>Your profile information has been saved. Changes will be reflected immediately.</c-ds.alert.section>
+      </c-ds.alert>
+    </div>
+  </div>
+
+  <div>
+    <h3>Alert Destructive</h3>
+    <div class="w-full max-w-md mt-4">
+      <c-ds.alert destructive>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-icon lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+        <c-ds.alert.title>Account updated successfully</c-ds.alert.title>
+        <c-ds.alert.section>Your profile information has been saved. Changes will be reflected immediately.</c-ds.alert.section>
+      </c-ds.alert>
+    </div>
+  </div>
+
+  <div>
+    <h3>Action</h3>
+    <div class="w-full max-w-md mt-4">
+      <c-ds.alert>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-icon lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+        <c-ds.alert.title>Dark mode is now available</c-ds.alert.title>
+        <c-ds.alert.section>Enable it under your profile settings to get started.</c-ds.alert.section>
+        <c-ds.alert.footer>
+          <button type="button" class="btn" data-size="xs">Enable</button>
+        </c-ds.alert.footer>
+      </c-ds.alert>
+    </div>
+  </div>
+
+  <div>
+    <h3>Custom Colors</h3>
+    <div class="w-full max-w-md mt-4">
+      <c-ds.alert class="border-amber-200 after:bg-amber-500 bg-amber-50 text-amber-900 dark:border-amber-900 dark:bg-amber-950 dark:text-amber-50">
+        <svg class="lucide lucide-triangle-alert" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" /><path d="M12 9v4" /><path d="M12 17h.01" /></svg>
+        <c-ds.alert.title>Your subscription will expire in 3 days.</c-ds.alert.title>
+        <c-ds.alert.section>Renew now to avoid service interruption or upgrade to a paid plan to continue using the service</c-ds.alert.section>
+
+      </c-ds.alert>
+    </div>
+  </div>
+
+</section>
+{% endblock content %}

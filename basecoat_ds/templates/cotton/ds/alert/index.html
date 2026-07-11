@@ -1,0 +1,16 @@
+{% comment %}
+Basecoat UI Alert Component
+
+https://basecoatui.com/components/alert/
+
+{% endcomment %}
+
+<c-vars
+  as="div"
+  class=""
+  destructive
+/>
+
+<{{ as }} class="alert {{ class }}" {{ attrs }} {% if destructive %}data-variant="destructive"{% endif %}>
+  {{ slot }}
+</{{ as }}>
