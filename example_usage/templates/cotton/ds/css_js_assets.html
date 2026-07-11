@@ -1,0 +1,10 @@
+{% comment %}
+
+Example of overwrite of template that injects your project-specific assets into the demo site. 
+
+{% endcomment %}
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'vite/css/app.css' %}">
+<script src="{% static 'vite/js/basecoat.js' %}"></script>

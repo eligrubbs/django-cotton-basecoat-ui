@@ -1,0 +1,17 @@
+{
+    "name": "js-css-vite-build",
+    "version": "1.0.0",
+    "description": "a small repo where I play around with mixing django cotton and Basecoat UI.",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "watch": "vite build --watch"
+    },
+    "devDependencies": {
+        "@tailwindcss/vite": "^4.3.2",
+        "@types/node": "^26.1.1",
+        "basecoat-css": "^1.0.2",
+        "tailwindcss": "^4.3.2",
+        "vite": "^8.1.4"
+    }
+}

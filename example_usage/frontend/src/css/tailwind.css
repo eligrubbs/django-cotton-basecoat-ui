@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+
+/* Tailwind Source traverses from file path. */
+@source "../../../**/*.html";
+
+/* Just for this demo app, we include the path to `basecoat_ds` since it already exists locally. */
+@source "../../../../basecoat_ds/templates/**/*.html";

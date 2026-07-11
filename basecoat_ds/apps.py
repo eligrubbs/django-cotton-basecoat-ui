@@ -1,5 +1,7 @@
 from django.apps import AppConfig
 
+from .data import APP_NAME
+
 
 class DesignSystemConfig(AppConfig):
-    name = 'basecoat_ds'
+    name = APP_NAME
