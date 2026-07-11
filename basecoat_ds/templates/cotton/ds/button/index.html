@@ -1,0 +1,17 @@
+{% comment %}
+Basecoat UI Button Component
+
+{% endcomment %}
+
+<c-vars
+  as="button"
+  class=""
+  size=""
+/>
+
+<{{ as }}
+  class="btn {{ class }}"
+  {{ attrs }}
+>
+  {{ slot }}
+</{{ as }}>

@@ -1,0 +1,21 @@
+{% comment %}
+Basecoat UI Tabs Component
+
+https://basecoatui.com/components/tabs/
+
+{% endcomment %}
+
+<c-vars
+  orientation="horizontal"
+  :orientationClasses="{
+    '': '',
+    'horizontal': 'horizontal',
+    'vertical': 'vertical',
+  }"
+/>
+
+<div class="tabs">
+  <nav role="tablist" aria-orientation="{{ orientationClasses|get_item:orientation }}">
+    
+  </nav>
+</div>

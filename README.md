@@ -1,6 +1,8 @@
 # django-cotton-basecoat-ui
 Basecoat UI components powered by django-cotton
 
+Status: Just for me to play around with this. Not going to continue with it.
+
 ## TLDR; What is this repo?
 
 This repository maintains a [django-cotton](https://django-cotton.com/) django app component library styled with [Basecoat UI](https://basecoatui.com/). 
