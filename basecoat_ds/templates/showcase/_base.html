@@ -52,10 +52,11 @@
           <button type="button" onclick="document.getElementById('sidebar')?.toggle()">Toggle sidebar</button>
         </div>
       </header>
-      <div id="contentInner" class="flex gap-10 p-4 md:p-6 xl:p-12">
-        {% block content %}
-        {% endblock content %}
-
+      <div id="contentInner" class="flex gap-10 p-4 md:p-6 xl:p-12 h-full">
+        <div class="max-w-5xl mx-auto">
+            {% block content %}
+            {% endblock %}
+        </div>
       </div>
     </main>
 

@@ -23,7 +23,7 @@ This file tracks the progress of implementing all [Basecoat UI](https://basecoat
 - [ ] Input
 - [ ] Input Group
 - [ ] Item
-- [ ] Kbd
+- [X] [Kbd](./basecoat_ds/templates/cotton/ds/kbd/index.html)
 - [ ] Label
 - [ ] Native Select
 - [ ] Pagination
