@@ -12,6 +12,16 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 
 from pathlib import Path
 
+##################
+# Just for this demo project, we add the path to the root of this repo
+# so that we can install the app just one directory parent to this django project.
+# This is so we can avoid duplication tracking the source and the copy of the same
+# files.
+##################
+import sys
+sys.path.append("..")
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -37,6 +47,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # Custom Apps
+    'django_cotton',
+    # Your Design System
+    'basecoat_ds',
 ]
 
 MIDDLEWARE = [
